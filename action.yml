@@ -1,0 +1,17 @@
+name: "chatwork notification"
+description: "just send messages via chatwork API"
+author: "kazuki nagao"
+inputs:
+  CHATWORK_API_TOKEN:
+    required: true
+    description: "api token for chatwork"
+  CHATWORK_ROOM_ID:
+    required: true
+    description: "room id for post message target"
+  CHATWORK_MESSAGES:
+    required: true
+    description: "message for post"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
